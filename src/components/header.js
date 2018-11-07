@@ -1,23 +1,30 @@
 import React, { Component } from 'react';
-import Nav from "./nav";
+import {Animated} from "react-animated-css";
+
+
+
+
 
 class Header extends Component {
   render() {
     return (
 
       <header>
-      <Nav/>
+
         <div className="head">
             <h2>Awesome apps for your <br /> Modern Lifestyle</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
               dolorum nulla magnam veniam sapiente, fugiat!</p>
+          </div>
+              <div>
+              <a className="viewmore-button" href="#">View More</a> 
 
-              <a className="viewmore-button" href="#">View More</a> <br />
-            <a className="download-button" href="#">Download App</a></div>
-
+            <a className="download-button" href="#">Download App</a>
+            </div>
 
 
       </header>
+
 
     );
   }

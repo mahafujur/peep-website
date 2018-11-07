@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-
-class AwesomeBody extends Component {
-  constructor(){
-      super();
-
-      }
+import Header from './header'
+import {Animated} from "react-animated-css";
 
 
 
-  render() {
-
-
-
-    return (
-      <p> hei </p>
-
+class AwesomeBody extends React.Component {
+  render(){
+    return(
+      <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+    <div>
+        <Header />
+    </div>
+</Animated>
     );
   }
-}
-
+ }
 export default AwesomeBody;

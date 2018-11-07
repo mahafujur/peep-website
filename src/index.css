@@ -125,7 +125,7 @@ header div.head h2 {
   text-transform: uppercase;
 
   margin: 0;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   border-right: 0px solid #111;
   padding-top: 10%;
 }
@@ -140,32 +140,30 @@ header div.head p {
 
 .viewmore-button{
   background: red;
-  display: block;
   color: #fff;
-  font-weight: bold;
-  width: 20%;
-  margin: 0 auto;
+    width: 8%;
+  margin: 15px 0 0  120px ;
   text-align: center;
   padding: 12px;
   border-radius: 25px;
   text-decoration: none;
-
+  display: inline-grid;
   -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
 }
 .download-button{
   background: white;
-
-  display: block;
   color: black;
   font-weight: bold;
-  width: 20%;
-  margin: 0 auto;
+  width: 8%;
+  margin: 15px;
   text-align: center;
   padding: 12px;
+  border-color: green;
   border-radius: 25px;
   text-decoration: none;
+
   -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
@@ -185,8 +183,8 @@ main {
 
 
 main section {
-  width: 70%;
-  padding: 90px 0;
+  width: 85%;
+  padding: 100px 0;
   margin: 50px auto 150px auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -194,13 +192,13 @@ main section {
 
 }
 
-main section h2 {
-  font-size: 4.3rem;
-  color: #ddd;
-  text-transform: uppercase;
- line-height: 4.2rem;
+main section h3 {
+  font-size: 2.3rem;
+  color: black;
+  padding-top: 90px;
+   line-height: 0rem;
  padding-right: 10px;
- border-right: 3px solid #ddd;
+ border-right: 0px solid #ddd;
 }
 
 
@@ -263,79 +261,6 @@ div.services {
 
  /*------------- FORM -------------------*/
 
-main section form {
-  padding: 0px;
-  margin: 0;
-}
-main section h2 {
-  font-size: 3rem;
-}
-
-main section form div {
-  border:1px solid #eee;
-  padding: 10px;
-border-radius: 10px;
-font-size: 1.1rem;
-display: grid;
-margin-bottom: 10px;
-grid-template-columns: 1fr 3fr;
-align-items: center;
-
-}
-
-main section form div:last-of-type {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-
-}
-
-main section form div:last-of-type input {
-  background: rgb(0, 99, 248);
-  padding: 10px;
-  color: #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.75);
-}
-
-main section form div label {
-  background: #444;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 6px;
-  text-align: center;
-  margin-right: 10px;
-  border-radius:10px;
-  -webkit-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.75);
-}
-
-main section form div input {
-  background: none;
-  border: none;
-  font-size: 1rem;
-}
-main section form div textarea {
-  font-family: Raleway;
-
-  border: none;
-  background: none;
-  font-size: 1rem;
-  resize: vertical;
-}
-
-.error {
-  color: rgb(255, 57, 57);
-  font-size: 1.3rem;
-}
-
-
-
-
 @media (max-width:1920px) and (min-width:1321px) {
 header{
   height: 699px;
@@ -366,33 +291,43 @@ header{
     }
 
     main section {
-      width: 90%;
-      padding: 90px 0;
-      margin: 0px auto 50px auto;
+      width: 85%;
+      padding: 20px 0;
+      margin: 0px auto -40px auto;
       display: grid;
       grid-template-columns: 1fr;
 
     }
+    main section h3 {
+      font-size: 2.3rem;
+      color: black;
+      padding-top: 90px;
+
+     padding-right: 10px;
+
+    }
+    main section  p {
+      padding: 10px 80px 50px;
+      font-size: 1.1rem;
+
+    }
+
     main section div p {
-      padding: 0px 90px;
+      padding: 0px 90px 50px;
     }
 
 
 
-    .services p.service-icon {
-      font-size: 2.4rem;
-      padding: 10px 30px;
-      margin: 0px 0px 30px 0px;
 
-    }
     .services p.service-title{
       font-size: 2.1rem;
-      padding: 0;
-      margin: 0;
+      padding: 20px;
+      margin: 0rem;
     }
 
     .services p:last-of-type{
-      padding: 0px 20px;
+      padding: 30px 20px 90px;
+      font-size: 1.1rem;
       text-align: left;
     }
 
@@ -428,13 +363,25 @@ header{
     }
 
     main section {
-      width: 90%;
-      padding: 90px 0;
+      width: 85%;
+      padding: 100px 0;
       margin: 0px auto 50px auto;
       display: grid;
       grid-template-columns: 1fr;
 
     }
+    main section h3 {
+      font-size: 2.3rem;
+      color: black;
+      padding-top: 90px;
+
+     padding-right: 10px;
+
+    }
+    main section  p {
+      padding: 10px 90px;
+    }
+
     main section div p {
       padding: 0px 90px;
     }
@@ -474,12 +421,19 @@ header{
   }
 
   main section {
-    width: 90%;
-    padding: 90px 0;
-    margin: 0px auto 50px auto;
+    width: 85%;
+    padding: 100px 0;
+    margin: -10px auto -10px auto;
     display: grid;
     grid-template-columns: 1fr;
 
+  }
+  main section h3 {
+    padding: 90px 90px -15px 0px;
+
+  }
+  main section  p {
+    padding: 10px 60px;
   }
   main section div p {
     padding: 0px 90px;
@@ -502,15 +456,110 @@ header{
     padding: 0px 20px;
     text-align: left;
   }
+  .viewmore-button{
+    background: red;
+    color: #fff;
+      width: 8%;
+    margin: 15px 0 0  120px ;
+    text-align: center;
+    padding: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-grid;
+    -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+  }
+  .download-button{
+    background: white;
+    color: black;
+    font-weight: bold;
+    width: 8%;
+    margin: 15px;
+    text-align: center;
+    padding: 12px;
+    border-color: green;
+    border-radius: 25px;
+    text-decoration: none;
 
+    -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+  }
 
 }
 
 
 @media (max-width:849px) and (min-width:600px) {
+  nav {
+
+    position: fixed;
+    z-index: 2;
+    background: tranparent;
+
+    width: 70%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 8px 5px 0 -2px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+  }
+
+  nav ul {
+    width: 65%;
+    display: inline-grid;
+    list-style: none;
+    align-items: left;
+    padding: 10px 95px ;
+    margin: 0;
+  }
+
+  nav ul:first-of-type{
+    grid-template-columns: 1fr;
+  }
+  nav ul:first-of-type li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-indent: 1px;
+  }
+  nav ul:first-of-type li span {
+
+    color: #444;
+  }
+
+  nav ul:last-of-type{
+    grid-template-columns: repeat(6, 1fr);
+
+  }
+
+
+  nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding-left: 1px;
+    padding-right: 40px;
+
+
+  }
+
+  nav ul a nav-logo{
+    weidht: 50%;
+    display: inline-block;
+    padding-top: 0.0rem;
+    padding-bottom: 0.0rem;
+    margin-right: 0.5rem;
+    font-size: 1.00rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
   header {
-    padding-top: 5px;
-  height: 399px;
+    background-size: 100%;
+
+    padding-top: 10px;
+  height: 400px;
 
 
   }
@@ -529,170 +578,53 @@ header{
     padding-left: 1px;
   }
 
-
-
-  main section {
-    width: 90%;
-    padding: 90px 0;
-    margin: 0px auto 50px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-
-  }
-  main section div p {
-    padding: 0px 90px;
-  }
-
- div.services {
-   display: grid;
-   grid-template-columns: 1fr;
-  }
-   div.services div {
-    width: 70%;
-  }
-
-  .services p.service-icon {
-    font-size: 2.4rem;
-    padding: 10px 30px;
-    margin: 0px 0px 30px 0px;
-
-  }
-  .services p.service-title{
-    font-size: 2.1rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .services p:last-of-type{
-    padding: 0px 20px;
-    text-align: left;
-  }
-
-
-}
-
-
-@media (max-width:599px) and (min-width:415px) {
-
-  nav {
-   text-align: center;
-    display: grid;
-
-  }
-
-  nav ul {
-    margin-bottom: 0px;
-
-  }
-  nav ul:first-of-type {
-    border-bottom:0px solid #111;
-    padding-bottom: 0px;
-  }
-
-  nav ul:last-of-type li{
-   text-align: center;
-   width: 100%;
-   font-weight: bold;
-   padding-top: 1px;
-   font-size: 0.48rem;
-
-
-  }
-
-  header {
-    background-size: 100%;
-        height: 245px;
-
-
-
-
-  }
-
-  header div.head {
-    width: 95%;
-    grid-template-columns:  1fr;
-    position: left;
-    padding-top: 100px;
-
-  }
-  header div.head h2 {
-    font-size: 0.80rem;
-    border: none;
-
-  }
-
-  header div.head p {
-    padding-left: 1px;
-    font-size: 0.70rem;
-  }
-
-
   main section:first-of-type{
-    margin-top: 390px;
+    margin-top: 0px;
   }
 
   main section {
     width: 90%;
-    padding: 10px 0;
-    margin: 50px auto 0px auto;
+    padding: 70px 0;
+    margin: 0px auto 5px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
 
+  }
+  main section h3{
+    font-size: 2.6rem;
+    padding: 12px 0 -12px 0 ;
+  }
+  main section p {
+    padding: 0px 12px;
   }
   main section div p {
-    padding: 0px 10px;
+    padding: 0px 12px;
   }
 
-  div.services {
-   display: grid;
-   grid-template-columns: 1fr;
-  }
-  div.services div {
-    width: 80%;
-  }
 
-  .services p.service-icon {
-    font-size: 2.4rem;
-    padding: 10px 30px;
-    margin: 0px 0px 30px 0px;
 
-  }
   .services p.service-title{
-    font-size: 2.1rem;
-    padding: 0;
+    font-size: 1.5rem;
+    padding: 10px;
     margin: 0;
   }
 
   .services p:last-of-type{
-    padding: 0px 20px;
+    padding: 5px 20px;
     text-align: left;
   }
-
-
-  main section form div label {
-    margin-right:10px;
-    border-radius: 5px;
-
-  }
-
-  main section form div:last-of-type input {
-
-    padding: 10px;
-    border-radius: 5px;
-
-  }
-
 
 
 }
 
 
 
-@media (max-width:414px) and (min-width:0px) {
+
+@media (max-width:599px) and (min-width:0px) {
 
   nav {
    text-align: center;
-    display: grid;
+    display: inline-grid;
 
   }
 
@@ -724,71 +656,90 @@ header{
   }
 
   header div.head {
-    width: 75%;
+    width: 85%;
     grid-template-columns:  1fr;
     position: left;
-    padding-top: 100px;
+    padding-top: 55px;
 
   }
   header div.head h2 {
-    font-size: 0.80rem;
+    font-size: 0.60rem;
     border: none;
+    padding: 5px 90px 0 12px;
+
 
   }
 
   header div.head p {
     padding-left: 1px;
-    font-size: 0.70rem;
+    font-size: 0.52rem;
+    color: light-grey;
   }
 
+main{
 
-  main section:first-of-type{
-    margin-top: 390px;
-  }
+
+  /*background-color:rgb(245,245,245); */
+}
 
   main section {
-    width: 90%;
+    width: 85%;
     padding: 10px 0;
-    margin: 50px auto 0px auto;
+    margin: 1px auto 0px auto;
     display: grid;
     grid-template-columns: 1fr;
+    padding-top: -5px;
+    padding-right: 8%;
+
 
   }
+  main section  h3{
+  font-size: 1.1rem;
+  padding: 9px 0 0px 10px ;
+
+
+
+  }
+  main section  p {
+    padding: 2px 1px 0 7px;
+
+    color:rgb(105,105,105);
+  }
   main section div p {
-    padding: 0px 10px;
+    padding: 1px 1px;
   }
 
   div.services {
    display: grid;
    grid-template-columns: 1fr;
+   padding-right: 5%;
+   padding-left: 2%;
   }
   div.services div {
-    width: 80%;
-  }
+    width: 85%;
 
-  .services p.service-icon {
-    font-size: 2.4rem;
-    padding: 10px 30px;
-    margin: 0px 0px 30px 0px;
 
   }
+
+
   .services p.service-title{
-    font-size: 2.1rem;
-    padding: 0;
+    font-size: 1.1rem;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
     margin: 0;
   }
 
   .services p:last-of-type{
-    padding: 0px 20px;
-    text-align: left;
-  }
-
-
-  main section form div label {
-    margin-right:10px;
-    border-radius: 5px;
+padding:0px 20px 0 2px;
+font-size: 1.1rem;
+text-align: center;
+color:rgb(105,105,105);
 
   }
+
+
+
 
   main section form div:last-of-type input {
 
@@ -796,7 +747,41 @@ header{
     border-radius: 5px;
 
   }
+  .viewmore-button{
+    background: red;
+    color: #fff;
+    font-size: .45rem;
+      width: 49px;
+      height: 8px;
+    margin: 5px 0 0  36px ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-grid;
+    -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+  }
+  .download-button{
+    background: white;
+    font-size: .45rem;
+      width: 49px;
+      height: 8px;
+    margin: 5px 0 0  18px ;
+    color: black;
+    font-weight: bold;
 
+    text-align: center;
+    padding: 12px;
+    border-color: green;
+    border-radius: 25px;
+    text-decoration: none;
+
+    -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+  }
 
 
 }

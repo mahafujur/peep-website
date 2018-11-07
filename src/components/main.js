@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AwesomeBody from "./awesome-body";
+import Home from "./home";
 
 class Main extends Component {
   render() {
@@ -14,29 +15,7 @@ class Main extends Component {
 
         </section>
 
-        <div>
-             <div className="services">
-                <div className="service-one">
-
-                <p className="service-title">Easy to use</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                </div>
-                <div className="service-two">
-
-                <p className="service-title">Awesome Interface</p>
-                <p>Nulla eu metus faucibus, vehicula tortor quis, venenatis odio. Nullam purus mauris, feugiat in odio vitae, posuere volutpat libero. Sed et convallis libero.</p>
-
-                </div>
-                <div className="service-three">
-
-                <p className="service-title">Great Support</p>
-                <p>Ut ornare vitae enim a rhoncus. Nullam aliquet tristique scelerisque. Sed volutpat dictum risus ac laoreet. Suspendisse id lorem in enim sollicitudin varius.</p>
-
-          </div>
-        </div>
-
-            </div>
-
+        <Home />
 
 
           <section>
@@ -61,7 +40,10 @@ class Main extends Component {
             <a className="viewmore" href="#">Open Place</a>
             <a className="viewmore" href="#">Events</a>
 
+
+
             <AwesomeBody/>
+
 
         </section>
 

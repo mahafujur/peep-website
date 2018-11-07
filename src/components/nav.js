@@ -6,7 +6,9 @@ class Nav extends Component {
       <nav>
           <ul>
 
-              <a className="nav-logo" href="/peeptheplace.com" img src="./images/logo.png" alt=" " ></a>
+              <a className="nav-logo"
+               href="/peeptheplace.com"
+               img src="./images/logo.png" alt=" " ></a>
           </ul>
           <ul>
               <li><a href="#">Home</a></li>
